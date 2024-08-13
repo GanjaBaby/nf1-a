@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('Linked.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'CustomFont', Arial, sans-serif;
+    background: url('cat3.gif') center/cover no-repeat;
+    transition: background 1s ease;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Black outline */
+}
+
+h2 {
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Black outline */
+}
+
+h3 {
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Black outline */
+}
+
+#backgroundAudio {
+    display: none;
+}
+
+#countdown {
+    font-family: 'CustomFont', Arial, sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.rotate-number {
+    display: inline-block;
+    perspective: 1000px;
+}
+
+.rotate-number div {
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    margin: 0 5px;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% 10px;
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}

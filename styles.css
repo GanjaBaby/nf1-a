@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100;
+    margin: 0;
+    font-family: 'Edu VIC WA NT Beginner', sans-serif; /* Use the imported Google Font */
+    background: url('cat1.gif') center/cover no-repeat;
+    transition: background-color 1s ease, background 2s ease; /* Combine transitions */
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Edu VIC WA NT Beginner', sans-serif; /* Apply the font to buttons as well */
+}
+
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Black outline */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Edu VIC WA NT Beginner';
+}
+
+#noButton {
+    transition: transform 50ms linear; /* Adjust the duration for faster movement */
+}
+
+/* styles.css */
+
+body.transitioning {
+    transition: background-color 0.5s ease; /* Add a transition for the background-color property */
+}
